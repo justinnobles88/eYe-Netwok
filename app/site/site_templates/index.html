@@ -1,0 +1,104 @@
+<section class="landing-page-area-one">
+    <div class="background">
+        <div class="imgA"><img src="../static/images/manmeditate.jpg" class="background"></div>
+        <div class="imgB"><img src="../static/images/womanmeditate.jpg" class="background"></div>
+    </div>
+    <h1 style="z-index: 1;
+    height: 15em;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: flex;
+    font-size: 3em;
+    text-shadow: -1px 2px 2px goldenrod,
+                  1px 1px 0 goldenrod,
+                  1px -1px 0 goldenrod,
+                  -1px -1px 0 goldenrod;">Welcome to The Universal Institue of Infinite E</h1>
+</section>
+<!-- Main Page -->
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="mainpage">
+    <div class="section1">
+        <div class="textA"><h1 style="text-shadow: -1px 2px 2px goldenrod,
+            1px 1px 0 goldenrod,
+            1px -1px 0 goldenrod,
+            -1px -1px 0 goldenrod;">Here at UIOIE we offer a holistic view!</h1></div>
+        <div class="imgA"><img src="../static/images/perspectiveOF.jpg"></div>
+    </div>
+    <div class="section2">
+        <div class="textB"><h1 style="text-shadow: -1px 2px 2px goldenrod,
+            1px 1px 0 goldenrod,
+            1px -1px 0 goldenrod,
+            -1px -1px 0 goldenrod;">Our perspective changes Everything!</h1></div>
+        <div class="imgA"><img src="../static/images/wholeview.jpg"></div>
+    </div>
+    <div class="section3">
+        <div class="textC"><h1 style="text-shadow: -1px 2px 2px goldenrod,
+            1px 1px 0 goldenrod,
+            1px -1px 0 goldenrod,
+            -1px -1px 0 goldenrod;">Accompanied by cutting edge breakthroughs in science and spirituality!</h1></div>
+        <div class="imgA"><img src="../static/images/sciencespirit.jpg"></div>
+    </div>
+    <div class="section4">
+        <div class="textD"><h1 style="text-shadow: -1px 2px 2px goldenrod,
+            1px 1px 0 goldenrod,
+            1px -1px 0 goldenrod,
+            -1px -1px 0 goldenrod;">We Strive to make a place you feel empowered and whole!</h1></div>
+        <div class="imgA"><img src="../static/images/empowered.jpg"></div>
+    </div>
+</section>
+<!-- Location Section -->
+<section id="locations">
+    <h3>Location</h3>
+    <div class="mapouter">
+        <div class="gmap_canvas" id="location">
+            <iframe width="100%" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=central%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+                <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>              
+                <a href="https://www.embedgooglemap.net"></a>
+        </div>
+    </div>
+</section>
+<!-- Contact section -->
+<section>
+    <div class="foot-info">
+        <div style="color: goldenrod;" class="foothead" id="info">Info</div>
+        <div class="location">
+            <p style="color: goldenrod;" class="tiny"><i class="fa-solid fa-map-location-dot"></i>UIOIE 369 The Only Way Youville,Universe </p>
+        </div>
+        <div class="email">
+            <p style="color: goldenrod;" class="tiny"><i class="fa-solid fa-envelope"></i>UIOIE@source.com</p>    
+        </div>
+        <div class="phone">
+            <p style="color: goldenrod;" class="tiny"><i class="fa-solid fa-phone"></i>Call Us: (333)369-9999</p>    
+        </div>
+        <h3 id="contact">Contact Us!</h3>
+        <form>
+            <label>Name:</label><br>
+            <input type="text"id="Name"placeholder="Name..."><br>
+            <label>Email:</label><br>
+            <input type="text"id="Name"placeholder="Email..."><br>
+            <label>Phone:</label><br>
+            <input type="text"id="Name"placeholder="Phone..."><br>
+            <label>Message:</label><br>
+            <textarea name="message" id="message" cols="40" rows="5"></textarea><br>
+            <p>How would you like us to respond?</p>
+            <input type="radio"id="emailradio" value="Email">
+            <label for="email">Email</label>
+            <input type="radio"id="phoneradio" value="Phone">
+            <label for="phone">Phone</label><br>
+            <button>Submit</button>
+        </form>
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    <p class="footer">&copy; Justin Nobles 2023</p>
+</footer>
+    
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e822740fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/profile.css">
+    <title>eYeNetwork</title>
+</head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/63c5a76347425128790df578/1gmu1bn86';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+<body>
+<!-- NavBar -->
+<nav style="height: 100px;">
+    <div class="nav-container">
+        <img style="width: 200px;" class="image image-contain" src="../static/images/UIOE.png" />
+        <div class="navbar-list">
+            <ul>
+                <li class="nav-item">
+                    <a style= "color: goldenrod" href="#locations" class="nav-link">Info</a> 
+                </li>
+                <li class="nav-item">
+                    <a style= "color: goldenrod" href="{{ url_for('site.blog') }}" class="nav-link">eyeFeeds</a> 
+                </li>
+                <li class="nav-item">
+                    <a style= "color: goldenrod" href="{{ url_for('site.home') }}" class="nav-link">Logout</a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Main Landing Tile -->
+<section class="landing-page-area-one">
+    <div class="background">
+        <div class="imgA" style="margin-top: -90px;"><img src="../static/images/profileye.jpg" class="background"></div>
+    </div>
+    <h1 style="z-index: 1;
+    height: 15em;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: flex;
+    font-size: 3em;
+    text-shadow: -1px 2px 2px goldenrod,
+                  1px 1px 0 goldenrod,
+                  1px -1px 0 goldenrod,
+                  -1px -1px 0 goldenrod;margin-top: -100px;">Welcome to Thee eyeNetwork</h1>
+</section>
+<!-- Main Page -->
+<section style="margin-top: -200px;" class="mainpage">
+    <iframe allowfullscreen id="wallsio-iframe" src="https://my.walls.io/s6fta?nobackground=1&amp;show_header=0" style="border:0;height:800px;width:100%" loading="lazy" title="My social wall"></iframe>
+
+</section>
+<!-- Location Section -->
+<section id="locations">
+    <h3>Location</h3>
+    <div class="mapouter">
+        <img style="height: 350px; width: 1525px;" src="../static/images/Iearth.jpg" alt="">
+    </div>
+</section>
+<!-- Contact section -->
+<section>
+    <div class="foot-info">
+        <div style="color: goldenrod;" class="foothead" id="info">Info</div>
+        <div class="location">
+            <p style="color: goldenrod;" class="tiny"><i class="fa-solid fa-map-location-dot"></i>UIOIE 369 The Only Way Youville,Universe </p>
+        </div>
+        <div class="email">
+            <p style="color: goldenrod;" class="tiny"><i class="fa-solid fa-envelope"></i>UIOIE@source.com</p>    
+        </div>
+        <div class="phone">
+            <p style="color: goldenrod;" class="tiny"><i class="fa-solid fa-phone"></i>Call Us: (333)369-9999</p>    
+        </div>
+        <h3 id="contact">Contact Us!</h3>
+        <form>
+            <label>Name:</label><br>
+            <input type="text"id="Name"placeholder="Name..."><br>
+            <label>Email:</label><br>
+            <input type="text"id="Name"placeholder="Email..."><br>
+            <label>Phone:</label><br>
+            <input type="text"id="Name"placeholder="Phone..."><br>
+            <label>Message:</label><br>
+            <textarea name="message" id="message" cols="40" rows="5"></textarea><br>
+            <p>How would you like us to respond?</p>
+            <input type="radio"id="emailradio" value="Email">
+            <label for="email">Email</label>
+            <input type="radio"id="phoneradio" value="Phone">
+            <label for="phone">Phone</label><br>
+            <button>Submit</button>
+        </form>
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    <p class="footer">&copy; Justin Nobles 2023</p>
+</footer>
+    
+</body>
+</html>

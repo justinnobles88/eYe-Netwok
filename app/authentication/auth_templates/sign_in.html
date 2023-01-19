@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="container p-5">
+    <div style="z-index: -1;" class="background">
+        <div style="margin-top: 200px;" class="imgA"><img src="../../static/images/suneye.jpg" class="background"></div>
+        <div style="margin-top: 200px;" class="imgA"><img src="../../static/images/mooneye.jpg" class="background"></div>
+    </div>
+    <div class="row">
+        <aside style="width: 33%; background-image: linear-gradient(to right, rgba(255, 170, 0, 0.986), rgba(223, 198, 98, 0.542)); padding-bottom: 20px; margin-left: 33.3%;" class="col-12 col-md-6">
+            <h1 style="margin-top: -150px; margin-bottom: -200px;" class="welcome">Welcome Please Sign In</h1>    
+            {% include 'forms.html' %}
+        </aside>
+    </div>
+</main>
+{% endblock %}

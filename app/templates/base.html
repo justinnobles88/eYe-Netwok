@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e822740fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/index.css">
+    <title>eYeNetwork</title>
+</head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/63c5a76347425128790df578/1gmu1bn86';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+<body>
+<!-- NavBar -->
+<nav style="height: 100px;">
+    <div class="nav-container">
+        <img style="width: 200px;" class="image image-contain" src="../static/images/UIOE.png" />
+        <div class="navbar-list">
+            <ul>
+                <li class="nav-item">
+                    <a style="color:goldenrod" href="{{ url_for('site.about') }}" class="nav-link">About</a> 
+                </li>
+                <li class="nav-item">
+                    <a style= "color: goldenrod" href="#location" class="nav-link">Info</a> 
+                </li>
+                <li class="nav-item">
+                    <a style= "color: goldenrod" href="{{ url_for('auth.signin') }}" class="nav-link">Sign In</a> 
+                </li>
+                <li class="nav-item">
+                    <a style= "color: goldenrod" href="{{ url_for('auth.signup') }}" class="nav-link">Sign Up</a> 
+                </li>    
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block content %}
+{% endblock %}
+</body>
+</html>
